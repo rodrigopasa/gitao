@@ -2,27 +2,32 @@ FROM node:20-slim
 
 WORKDIR /app
 
-# Copiar arquivos de dependências
+# Copiar package.json primeiro para cache de dependências
 COPY package*.json ./
 
-# Instalar apenas dependências de produção
-RUN npm ci --only=production
+# Instalar dependências (incluindo dev para build)
+RUN npm install
 
-# Copiar código fonte
+# Copiar resto do código
 COPY . .
 
-# Build da aplicação
+# Build da aplicação frontend e backend
 RUN npm run build
 
-# Criar diretórios necessários para uploads
+# Remover dependências de desenvolvimento para otimizar
+RUN npm prune --production
+
+# Criar diretórios para uploads
 RUN mkdir -p uploads/pdfs uploads/thumbnails uploads/avatars uploads/temp
 
 # Configurar permissões
-RUN chown -R node:node /app/uploads
+RUN chown -R node:node /app
+
+# Usar usuário não-root
 USER node
 
 # Expor porta
 EXPOSE 5000
 
-# Comando para iniciar
+# Comando de inicialização
 CMD ["npm", "start"]
