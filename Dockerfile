@@ -1,17 +1,20 @@
-# 🚀 Dockerfile ZERO - SEM healthcheck garantido
 FROM node:20-slim
 
 WORKDIR /app
 
-# Instalar dependências primeiro (melhor cache)
+# Copiar arquivos de configuração
 COPY package*.json ./
+
+# Instalar dependências
 RUN npm ci --only=production=false
 
-# Copiar código e fazer build
+# Copiar código fonte
 COPY . .
+
+# Build da aplicação
 RUN npm run build
 
-# Remover dependências de desenvolvimento  
+# Limpar dependências de desenvolvimento
 RUN npm prune --production
 
 # Criar diretórios necessários
@@ -20,9 +23,8 @@ RUN mkdir -p uploads/pdfs uploads/thumbnails uploads/avatars uploads/temp
 # Expor porta
 EXPOSE 5000
 
-# ⚠️  ABSOLUTAMENTE SEM HEALTHCHECK ⚠️
-# Override explícito para garantir que o Coolify não force healthcheck
+# FORÇA REMOÇÃO DE QUALQUER HEALTHCHECK
 HEALTHCHECK NONE
 
-# Comando simples de inicialização
+# Comando de inicialização simples
 CMD ["npm", "start"]
