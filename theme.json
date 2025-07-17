@@ -2,7 +2,7 @@
   "name": "PDFxandria",
   "type": "registry:theme", 
   "variant": "default",
-  "appearance": "dark", 
+  "appearance": "dark",
   "radius": 0.5,
   "primary": "239 84% 62%",
   "cssVars": {
