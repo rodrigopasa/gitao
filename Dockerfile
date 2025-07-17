@@ -29,5 +29,5 @@ USER node
 # Expor porta
 EXPOSE 5000
 
-# Comando de inicialização
+# Comando de inicialização (SEM healthcheck)
 CMD ["npm", "start"]
