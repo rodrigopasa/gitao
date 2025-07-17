@@ -1,0 +1,286 @@
+
+2025-Jul-17 12:11:57.966209
+#25 [runner  9/10] RUN mkdir -p uploads/pdfs uploads/thumbnails uploads/avatars uploads/temp
+2025-Jul-17 12:11:57.978207
+#25 DONE 0.2s
+2025-Jul-17 12:11:57.978207
+2025-Jul-17 12:11:57.978207
+#26 [runner 10/10] RUN chown -R nextjs:nodejs uploads
+2025-Jul-17 12:11:58.085438
+#26 DONE 0.1s
+2025-Jul-17 12:11:58.254499
+#27 exporting to image
+2025-Jul-17 12:11:58.254499
+#27 exporting layers
+2025-Jul-17 12:12:01.493545
+#27 exporting layers 3.4s done
+2025-Jul-17 12:12:01.707527
+#27 writing image sha256:175dbb4635bd311e020cc0aad107a356c188a76efc78aa24ccf440b0764452fa done
+2025-Jul-17 12:12:01.707527
+#27 naming to docker.io/library/xcc800owok0s8ckckk8kw40g:6aedb497fff4039f40fe575df246ac0360696bcf 0.0s done
+2025-Jul-17 12:12:01.707527
+#27 DONE 3.5s
+2025-Jul-17 12:12:01.884386
+Building docker image completed.
+2025-Jul-17 12:12:01.907618
+----------------------------------------
+2025-Jul-17 12:12:01.931360
+Rolling update started.
+2025-Jul-17 12:12:03.305556
+[CMD]: docker exec qcw4ocgkg00ccgowog8gc0wg bash -c 'SOURCE_COMMIT=6aedb497fff4039f40fe575df246ac0360696bcf COOLIFY_URL=https://baixapdf.com COOLIFY_FQDN=baixapdf.com COOLIFY_BRANCH=main  docker compose --project-name xcc800owok0s8ckckk8kw40g --project-directory /artifacts/qcw4ocgkg00ccgowog8gc0wg -f /artifacts/qcw4ocgkg00ccgowog8gc0wg/docker-compose.yaml up --build -d'
+2025-Jul-17 12:12:03.305556
+Container xcc800owok0s8ckckk8kw40g-120839015638  Creating
+2025-Jul-17 12:12:03.416266
+xcc800owok0s8ckckk8kw40g-120839015638 Your kernel does not support memory swappiness capabilities or the cgroup is not mounted. Memory swappiness discarded.
+2025-Jul-17 12:12:03.428531
+Container xcc800owok0s8ckckk8kw40g-120839015638  Created
+2025-Jul-17 12:12:03.428531
+Container xcc800owok0s8ckckk8kw40g-120839015638  Starting
+2025-Jul-17 12:12:04.026682
+Container xcc800owok0s8ckckk8kw40g-120839015638  Started
+2025-Jul-17 12:12:04.049291
+New container started.
+2025-Jul-17 12:12:04.070549
+Custom healthcheck found, skipping default healthcheck.
+2025-Jul-17 12:12:04.088494
+Waiting for healthcheck to pass on the new container.
+2025-Jul-17 12:12:04.106167
+Waiting for the start period (5 seconds) before starting healthcheck.
+2025-Jul-17 12:12:09.883201
+[CMD]: docker inspect --format='{{json .State.Health.Status}}' xcc800owok0s8ckckk8kw40g-120839015638
+2025-Jul-17 12:12:09.883201
+"starting"
+2025-Jul-17 12:12:10.232497
+[CMD]: docker inspect --format='{{json .State.Health.Log}}' xcc800owok0s8ckckk8kw40g-120839015638
+2025-Jul-17 12:12:10.232497
+[]
+2025-Jul-17 12:12:10.238160
+Attempt 1 of 3 | Healthcheck status: "starting"
+2025-Jul-17 12:12:40.359937
+[CMD]: docker inspect --format='{{json .State.Health.Status}}' xcc800owok0s8ckckk8kw40g-120839015638
+2025-Jul-17 12:12:40.359937
+"unhealthy"
+2025-Jul-17 12:12:40.484765
+[CMD]: docker inspect --format='{{json .State.Health.Log}}' xcc800owok0s8ckckk8kw40g-120839015638
+2025-Jul-17 12:12:40.484765
+[]
+2025-Jul-17 12:12:40.493002
+Attempt 2 of 3 | Healthcheck status: "unhealthy"
+2025-Jul-17 12:12:40.501765
+----------------------------------------
+2025-Jul-17 12:12:40.510418
+Container logs:
+2025-Jul-17 12:12:40.620396
+[CMD]: docker logs -n 100 xcc800owok0s8ckckk8kw40g-120839015638
+2025-Jul-17 12:12:40.620396
+throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+2025-Jul-17 12:12:40.625610
+> rest-express@1.0.0 start
+2025-Jul-17 12:12:40.625610
+> NODE_ENV=production node dist/index.js
+2025-Jul-17 12:12:40.625610
+2025-Jul-17 12:12:40.625610
+2025-Jul-17 12:12:40.625610
+> rest-express@1.0.0 start
+2025-Jul-17 12:12:40.625610
+> NODE_ENV=production node dist/index.js
+2025-Jul-17 12:12:40.625610
+2025-Jul-17 12:12:40.625610
+2025-Jul-17 12:12:40.625610
+> rest-express@1.0.0 start
+2025-Jul-17 12:12:40.625610
+> NODE_ENV=production node dist/index.js
+2025-Jul-17 12:12:40.625610
+2025-Jul-17 12:12:40.625610
+2025-Jul-17 12:12:40.625610
+> rest-express@1.0.0 start
+2025-Jul-17 12:12:40.625610
+> NODE_ENV=production node dist/index.js
+2025-Jul-17 12:12:40.630584
+^
+2025-Jul-17 12:12:40.630584
+2025-Jul-17 12:12:40.630584
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /app/dist/index.js
+2025-Jul-17 12:12:40.630584
+at packageResolve (node:internal/modules/esm/resolve:873:9)
+2025-Jul-17 12:12:40.630584
+at moduleResolve (node:internal/modules/esm/resolve:946:18)
+2025-Jul-17 12:12:40.630584
+at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:642:12)
+2025-Jul-17 12:12:40.630584
+at #cachedDefaultResolve (node:internal/modules/esm/loader:591:25)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.resolve (node:internal/modules/esm/loader:574:38)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:236:38)
+2025-Jul-17 12:12:40.630584
+at ModuleJob._link (node:internal/modules/esm/module_job:130:49) {
+2025-Jul-17 12:12:40.630584
+code: 'ERR_MODULE_NOT_FOUND'
+2025-Jul-17 12:12:40.630584
+}
+2025-Jul-17 12:12:40.630584
+2025-Jul-17 12:12:40.630584
+Node.js v20.19.4
+2025-Jul-17 12:12:40.630584
+node:internal/modules/esm/resolve:873
+2025-Jul-17 12:12:40.630584
+throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+2025-Jul-17 12:12:40.630584
+^
+2025-Jul-17 12:12:40.630584
+2025-Jul-17 12:12:40.630584
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /app/dist/index.js
+2025-Jul-17 12:12:40.630584
+at packageResolve (node:internal/modules/esm/resolve:873:9)
+2025-Jul-17 12:12:40.630584
+at moduleResolve (node:internal/modules/esm/resolve:946:18)
+2025-Jul-17 12:12:40.630584
+at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:642:12)
+2025-Jul-17 12:12:40.630584
+at #cachedDefaultResolve (node:internal/modules/esm/loader:591:25)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.resolve (node:internal/modules/esm/loader:574:38)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:236:38)
+2025-Jul-17 12:12:40.630584
+at ModuleJob._link (node:internal/modules/esm/module_job:130:49) {
+2025-Jul-17 12:12:40.630584
+code: 'ERR_MODULE_NOT_FOUND'
+2025-Jul-17 12:12:40.630584
+}
+2025-Jul-17 12:12:40.630584
+2025-Jul-17 12:12:40.630584
+Node.js v20.19.4
+2025-Jul-17 12:12:40.630584
+node:internal/modules/esm/resolve:873
+2025-Jul-17 12:12:40.630584
+throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+2025-Jul-17 12:12:40.630584
+^
+2025-Jul-17 12:12:40.630584
+2025-Jul-17 12:12:40.630584
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /app/dist/index.js
+2025-Jul-17 12:12:40.630584
+at packageResolve (node:internal/modules/esm/resolve:873:9)
+2025-Jul-17 12:12:40.630584
+at moduleResolve (node:internal/modules/esm/resolve:946:18)
+2025-Jul-17 12:12:40.630584
+at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:642:12)
+2025-Jul-17 12:12:40.630584
+at #cachedDefaultResolve (node:internal/modules/esm/loader:591:25)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.resolve (node:internal/modules/esm/loader:574:38)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:236:38)
+2025-Jul-17 12:12:40.630584
+at ModuleJob._link (node:internal/modules/esm/module_job:130:49) {
+2025-Jul-17 12:12:40.630584
+code: 'ERR_MODULE_NOT_FOUND'
+2025-Jul-17 12:12:40.630584
+}
+2025-Jul-17 12:12:40.630584
+2025-Jul-17 12:12:40.630584
+Node.js v20.19.4
+2025-Jul-17 12:12:40.630584
+node:internal/modules/esm/resolve:873
+2025-Jul-17 12:12:40.630584
+throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+2025-Jul-17 12:12:40.630584
+^
+2025-Jul-17 12:12:40.630584
+2025-Jul-17 12:12:40.630584
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /app/dist/index.js
+2025-Jul-17 12:12:40.630584
+at packageResolve (node:internal/modules/esm/resolve:873:9)
+2025-Jul-17 12:12:40.630584
+at moduleResolve (node:internal/modules/esm/resolve:946:18)
+2025-Jul-17 12:12:40.630584
+at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:642:12)
+2025-Jul-17 12:12:40.630584
+at #cachedDefaultResolve (node:internal/modules/esm/loader:591:25)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.resolve (node:internal/modules/esm/loader:574:38)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:236:38)
+2025-Jul-17 12:12:40.630584
+at ModuleJob._link (node:internal/modules/esm/module_job:130:49) {
+2025-Jul-17 12:12:40.630584
+code: 'ERR_MODULE_NOT_FOUND'
+2025-Jul-17 12:12:40.630584
+}
+2025-Jul-17 12:12:40.630584
+2025-Jul-17 12:12:40.630584
+Node.js v20.19.4
+2025-Jul-17 12:12:40.630584
+node:internal/modules/esm/resolve:873
+2025-Jul-17 12:12:40.630584
+throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+2025-Jul-17 12:12:40.630584
+^
+2025-Jul-17 12:12:40.630584
+2025-Jul-17 12:12:40.630584
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /app/dist/index.js
+2025-Jul-17 12:12:40.630584
+at packageResolve (node:internal/modules/esm/resolve:873:9)
+2025-Jul-17 12:12:40.630584
+at moduleResolve (node:internal/modules/esm/resolve:946:18)
+2025-Jul-17 12:12:40.630584
+at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:642:12)
+2025-Jul-17 12:12:40.630584
+at #cachedDefaultResolve (node:internal/modules/esm/loader:591:25)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.resolve (node:internal/modules/esm/loader:574:38)
+2025-Jul-17 12:12:40.630584
+at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:236:38)
+2025-Jul-17 12:12:40.630584
+at ModuleJob._link (node:internal/modules/esm/module_job:130:49) {
+2025-Jul-17 12:12:40.630584
+code: 'ERR_MODULE_NOT_FOUND'
+2025-Jul-17 12:12:40.630584
+}
+2025-Jul-17 12:12:40.630584
+2025-Jul-17 12:12:40.630584
+Node.js v20.19.4
+2025-Jul-17 12:12:40.636268
+----------------------------------------
+2025-Jul-17 12:12:40.642332
+Removing old containers.
+2025-Jul-17 12:12:40.647352
+----------------------------------------
+2025-Jul-17 12:12:40.652348
+WARNING: Dockerfile or Docker Image based deployment detected. The healthcheck needs a curl or wget command to check the health of the application. Please make sure that it is available in the image or turn off healthcheck on Coolify's UI.
+2025-Jul-17 12:12:40.657771
+----------------------------------------
+2025-Jul-17 12:12:40.666004
+New container is not healthy, rolling back to the old container.
+2025-Jul-17 12:12:40.780331
+[CMD]: docker stop --time=30 xcc800owok0s8ckckk8kw40g-120839015638
+2025-Jul-17 12:12:40.780331
+xcc800owok0s8ckckk8kw40g-120839015638
+2025-Jul-17 12:12:40.954188
+[CMD]: docker rm -f xcc800owok0s8ckckk8kw40g-120839015638
+2025-Jul-17 12:12:40.954188
+xcc800owok0s8ckckk8kw40g-120839015638
+2025-Jul-17 12:12:40.973371
+Rolling update completed.
+2025-Jul-17 12:12:41.302199
+Gracefully shutting down build container: qcw4ocgkg00ccgowog8gc0wg
+2025-Jul-17 12:12:41.544523
+[CMD]: docker stop --time=30 qcw4ocgkg00ccgowog8gc0wg
+2025-Jul-17 12:12:41.544523
+qcw4ocgkg00ccgowog8gc0wg
+2025-Jul-17 12:12:41.755516
+[CMD]: docker rm -f qcw4ocgkg00ccgowog8gc0wg
+2025-Jul-17 12:12:41.755516
+Error response from daemon: No such container: qcw4ocgkg00ccgowog8gc0wg

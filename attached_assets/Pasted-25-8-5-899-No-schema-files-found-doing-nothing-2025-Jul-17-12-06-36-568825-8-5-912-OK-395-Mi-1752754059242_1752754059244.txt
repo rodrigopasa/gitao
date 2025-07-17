@@ -1,0 +1,162 @@
+25
+#8 5.899 No schema files found: doing nothing.
+2025-Jul-17 12:06:36.568825
+#8 5.912 OK: 395 MiB in 164 packages
+2025-Jul-17 12:06:36.568825
+#8 DONE 6.2s
+2025-Jul-17 12:06:36.568825
+2025-Jul-17 12:06:36.568825
+#11 [builder  3/12] WORKDIR /app
+2025-Jul-17 12:06:36.568825
+#11 DONE 0.0s
+2025-Jul-17 12:06:36.568825
+2025-Jul-17 12:06:36.568825
+#12 [builder  4/12] COPY package*.json ./
+2025-Jul-17 12:06:36.568825
+#12 DONE 0.0s
+2025-Jul-17 12:06:36.568825
+2025-Jul-17 12:06:36.568825
+#13 [builder  5/12] COPY tsconfig.json ./
+2025-Jul-17 12:06:36.568825
+#13 DONE 0.0s
+2025-Jul-17 12:06:36.568825
+2025-Jul-17 12:06:36.568825
+#14 [builder  6/12] COPY vite.config.ts ./
+2025-Jul-17 12:06:36.568825
+#14 DONE 0.0s
+2025-Jul-17 12:06:36.568825
+2025-Jul-17 12:06:36.568825
+#15 [builder  7/12] COPY tailwind.config.ts ./
+2025-Jul-17 12:06:36.568825
+#15 DONE 0.0s
+2025-Jul-17 12:06:36.568825
+2025-Jul-17 12:06:36.568825
+#16 [builder  8/12] COPY postcss.config.js ./
+2025-Jul-17 12:06:36.568825
+#16 DONE 0.0s
+2025-Jul-17 12:06:36.568825
+2025-Jul-17 12:06:36.568825
+#17 [builder  9/12] COPY drizzle.config.ts ./
+2025-Jul-17 12:06:36.568825
+#17 DONE 0.0s
+2025-Jul-17 12:06:36.568825
+2025-Jul-17 12:06:36.568825
+#18 [builder 10/12] RUN npm ci --only=production && npm cache clean --force
+2025-Jul-17 12:06:36.568825
+#18 0.219 npm warn config only Use `--omit=dev` to omit dev dependencies from the install.
+2025-Jul-17 12:06:36.568825
+#18 5.727 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+2025-Jul-17 12:06:36.568825
+#18 6.169 npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+2025-Jul-17 12:06:36.568825
+#18 7.304 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-Jul-17 12:06:36.568825
+#18 8.010 npm warn deprecated gauge@3.0.2: This package is no longer supported.
+2025-Jul-17 12:06:36.568825
+#18 8.570 npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+2025-Jul-17 12:06:36.568825
+#18 8.936 npm warn deprecated gm@1.25.1: The gm module has been sunset. Please migrate to an alternative. https://github.com/aheckmann/gm?tab=readme-ov-file#2025-02-24-this-project-is-not-maintained
+2025-Jul-17 12:06:36.568825
+#18 9.423 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+2025-Jul-17 12:06:36.568825
+#18 122.4
+2025-Jul-17 12:06:36.568825
+#18 122.4 added 562 packages, and audited 564 packages in 2m
+2025-Jul-17 12:06:36.568825
+#18 122.4
+2025-Jul-17 12:06:36.568825
+#18 122.4 74 packages are looking for funding
+2025-Jul-17 12:06:36.568825
+#18 122.4   run `npm fund` for details
+2025-Jul-17 12:06:36.568825
+#18 122.4
+2025-Jul-17 12:06:36.568825
+#18 122.4 5 vulnerabilities (1 low, 1 moderate, 3 high)
+2025-Jul-17 12:06:36.568825
+#18 122.4
+2025-Jul-17 12:06:36.568825
+#18 122.4 To address issues that do not require attention, run:
+2025-Jul-17 12:06:36.568825
+#18 122.4   npm audit fix
+2025-Jul-17 12:06:36.568825
+#18 122.4
+2025-Jul-17 12:06:36.568825
+#18 122.4 To address all issues (including breaking changes), run:
+2025-Jul-17 12:06:36.568825
+#18 122.4   npm audit fix --force
+2025-Jul-17 12:06:36.568825
+#18 122.4
+2025-Jul-17 12:06:36.568825
+#18 122.4 Run `npm audit` for details.
+2025-Jul-17 12:06:36.568825
+#18 122.4 npm notice
+2025-Jul-17 12:06:36.568825
+#18 122.4 npm notice New major version of npm available! 10.8.2 -> 11.4.2
+2025-Jul-17 12:06:36.568825
+#18 122.4 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2
+2025-Jul-17 12:06:36.568825
+#18 122.4 npm notice To update run: npm install -g npm@11.4.2
+2025-Jul-17 12:06:36.568825
+#18 122.4 npm notice
+2025-Jul-17 12:06:36.568825
+#18 122.6 npm warn using --force Recommended protections disabled.
+2025-Jul-17 12:06:36.568825
+#18 DONE 123.4s
+2025-Jul-17 12:06:36.568825
+2025-Jul-17 12:06:36.568825
+#19 [builder 11/12] COPY . .
+2025-Jul-17 12:06:36.568825
+#19 DONE 0.1s
+2025-Jul-17 12:06:36.568825
+2025-Jul-17 12:06:36.568825
+#20 [builder 12/12] RUN npm run build
+2025-Jul-17 12:06:36.568825
+#20 0.304
+2025-Jul-17 12:06:36.568825
+#20 0.304 > rest-express@1.0.0 build
+2025-Jul-17 12:06:36.568825
+#20 0.304 > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-Jul-17 12:06:36.568825
+#20 0.304
+2025-Jul-17 12:06:36.568825
+#20 0.322 sh: vite: not found
+2025-Jul-17 12:06:36.568825
+#20 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 127
+2025-Jul-17 12:06:36.568825
+------
+2025-Jul-17 12:06:36.568825
+> [builder 12/12] RUN npm run build:
+2025-Jul-17 12:06:36.568825
+0.304
+2025-Jul-17 12:06:36.568825
+0.304 > rest-express@1.0.0 build
+2025-Jul-17 12:06:36.568825
+0.304 > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-Jul-17 12:06:36.568825
+0.304
+2025-Jul-17 12:06:36.568825
+0.322 sh: vite: not found
+2025-Jul-17 12:06:36.568825
+------
+2025-Jul-17 12:06:36.568825
+Dockerfile:38
+2025-Jul-17 12:06:36.568825
+--------------------
+2025-Jul-17 12:06:36.568825
+36 |
+2025-Jul-17 12:06:36.568825
+37 |     # Build the application
+2025-Jul-17 12:06:36.568825
+38 | >>> RUN npm run build
+2025-Jul-17 12:06:36.568825
+39 |
+2025-Jul-17 12:06:36.568825
+40 |     # Production stage
+2025-Jul-17 12:06:36.568825
+--------------------
+2025-Jul-17 12:06:36.568825
+ERROR: failed to solve: process "/bin/sh -c npm run build" did not complete successfully: exit code: 127
+2025-Jul-17 12:06:36.568825
+exit status 1
+2025-Jul-17 12:06:36.573440
+Deployment failed. Removing the new version of your application.

@@ -1,0 +1,214 @@
+364739
+2025-Jul-17 12:03:04.364739
+#11 [builder  6/12] COPY vite.config.ts ./
+2025-Jul-17 12:03:04.364739
+#11 DONE 0.0s
+2025-Jul-17 12:03:04.364739
+2025-Jul-17 12:03:04.364739
+#12 [runner  3/10] WORKDIR /app
+2025-Jul-17 12:03:04.364739
+#12 DONE 0.0s
+2025-Jul-17 12:03:04.364739
+2025-Jul-17 12:03:04.364739
+#13 [builder  7/12] COPY tailwind.config.ts ./
+2025-Jul-17 12:03:04.364739
+#13 DONE 0.0s
+2025-Jul-17 12:03:04.364739
+2025-Jul-17 12:03:04.364739
+#14 [builder  8/12] COPY postcss.config.js ./
+2025-Jul-17 12:03:04.364739
+#14 DONE 0.0s
+2025-Jul-17 12:03:04.364739
+2025-Jul-17 12:03:04.364739
+#15 [builder  9/12] COPY drizzle.config.ts ./
+2025-Jul-17 12:03:04.364739
+#15 DONE 0.0s
+2025-Jul-17 12:03:04.364739
+2025-Jul-17 12:03:04.364739
+#16 [runner  4/10] RUN addgroup --system --gid 1001 nodejs
+2025-Jul-17 12:03:04.364739
+#16 DONE 0.1s
+2025-Jul-17 12:03:04.364739
+2025-Jul-17 12:03:04.364739
+#17 [runner  5/10] RUN adduser --system --uid 1001 nextjs
+2025-Jul-17 12:03:04.364739
+#17 DONE 0.1s
+2025-Jul-17 12:03:04.364739
+2025-Jul-17 12:03:04.364739
+#18 [builder 10/12] RUN npm ci --only=production && npm cache clean --force
+2025-Jul-17 12:03:04.364739
+#18 0.257 npm warn config only Use `--omit=dev` to omit dev dependencies from the install.
+2025-Jul-17 12:03:04.364739
+#18 7.446 npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+2025-Jul-17 12:03:04.364739
+#18 8.874 npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+2025-Jul-17 12:03:04.364739
+#18 9.567 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-Jul-17 12:03:04.364739
+#18 9.908 npm warn deprecated gauge@3.0.2: This package is no longer supported.
+2025-Jul-17 12:03:04.364739
+#18 9.987 npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+2025-Jul-17 12:03:04.364739
+#18 10.18 npm warn deprecated gm@1.25.1: The gm module has been sunset. Please migrate to an alternative. https://github.com/aheckmann/gm?tab=readme-ov-file#2025-02-24-this-project-is-not-maintained
+2025-Jul-17 12:03:04.364739
+#18 12.14 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error code 1
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error path /app/node_modules/canvas
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error command failed
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error command sh -c prebuild-install -r napi || node-gyp rebuild
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error prebuild-install warn install No prebuilt binaries found (target=7 runtime=napi arch=x64 libc=musl platform=linux)
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp info it worked if it ends with ok
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp info using node-gyp@10.1.0
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp info using node@20.19.4 | linux | x64
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python Python is not set from command line or npm configuration
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python Python is not set from environment variable PYTHON
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python checking if "python3" can be used
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python - executable path is ""
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python - "" could not be run
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python checking if "python" can be used
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python - executable path is ""
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python - "" could not be run
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python **********************************************************
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python You need to install the latest version of Python.
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python Node-gyp should be able to find and use Python. If not,
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python you can try one of the following options:
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python - Use the switch --python="/path/to/pythonexecutable"
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python (accepted by both node-gyp and npm)
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python - Set the environment variable PYTHON
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python - Set the npm configuration variable python:
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python npm config set python "/path/to/pythonexecutable"
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python For more information consult the documentation at:
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python https://github.com/nodejs/node-gyp#installation
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python **********************************************************
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! find Python
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! configure error
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! stack Error: Could not find any Python installation to use
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! stack at PythonFinder.fail (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/find-python.js:306:11)
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! stack at PythonFinder.findPython (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/find-python.js:164:17)
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! stack at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! stack at async configure (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/configure.js:27:18)
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! stack at async run (/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js:81:18)
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! System Linux 6.8.0-63-generic
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! command "/usr/local/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! cwd /app/node_modules/canvas
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! node -v v20.19.4
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! node-gyp -v v10.1.0
+2025-Jul-17 12:03:04.364739
+#18 25.51 npm error gyp ERR! not ok
+2025-Jul-17 12:03:04.364739
+#18 25.52 npm notice
+2025-Jul-17 12:03:04.364739
+#18 25.52 npm notice New major version of npm available! 10.8.2 -> 11.4.2
+2025-Jul-17 12:03:04.364739
+#18 25.52 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2
+2025-Jul-17 12:03:04.364739
+#18 25.52 npm notice To update run: npm install -g npm@11.4.2
+2025-Jul-17 12:03:04.364739
+#18 25.52 npm notice
+2025-Jul-17 12:03:04.364739
+#18 25.52 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-07-17T12_02_38_421Z-debug-0.log
+2025-Jul-17 12:03:04.364739
+#18 ERROR: process "/bin/sh -c npm ci --only=production && npm cache clean --force" did not complete successfully: exit code: 1
+2025-Jul-17 12:03:04.364739
+------
+2025-Jul-17 12:03:04.364739
+> [builder 10/12] RUN npm ci --only=production && npm cache clean --force:
+2025-Jul-17 12:03:04.364739
+25.51 npm error gyp ERR! cwd /app/node_modules/canvas
+2025-Jul-17 12:03:04.364739
+25.51 npm error gyp ERR! node -v v20.19.4
+2025-Jul-17 12:03:04.364739
+25.51 npm error gyp ERR! node-gyp -v v10.1.0
+2025-Jul-17 12:03:04.364739
+25.51 npm error gyp ERR! not ok
+2025-Jul-17 12:03:04.364739
+25.52 npm notice
+2025-Jul-17 12:03:04.364739
+25.52 npm notice New major version of npm available! 10.8.2 -> 11.4.2
+2025-Jul-17 12:03:04.364739
+25.52 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2
+2025-Jul-17 12:03:04.364739
+25.52 npm notice To update run: npm install -g npm@11.4.2
+2025-Jul-17 12:03:04.364739
+25.52 npm notice
+2025-Jul-17 12:03:04.364739
+25.52 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-07-17T12_02_38_421Z-debug-0.log
+2025-Jul-17 12:03:04.364739
+------
+2025-Jul-17 12:03:04.364739
+Dockerfile:18
+2025-Jul-17 12:03:04.364739
+--------------------
+2025-Jul-17 12:03:04.364739
+16 |
+2025-Jul-17 12:03:04.364739
+17 |     # Install dependencies
+2025-Jul-17 12:03:04.364739
+18 | >>> RUN npm ci --only=production && npm cache clean --force
+2025-Jul-17 12:03:04.364739
+19 |
+2025-Jul-17 12:03:04.364739
+20 |     # Copy source code
+2025-Jul-17 12:03:04.364739
+--------------------
+2025-Jul-17 12:03:04.364739
+ERROR: failed to solve: process "/bin/sh -c npm ci --only=production && npm cache clean --force" did not complete successfully: exit code: 1
+2025-Jul-17 12:03:04.364739
+exit status 1
+2025-Jul-17 12:03:04.369971
+Deployment failed. Removing the new version of your application.
+2025-Jul-17 12:03:05.194842
+Gracefully shutting down build container: lww048gsk44s0owog0kssw84
+2025-Jul-17 12:03:05.558171
+[CMD]: docker stop --time=30 lww048gsk44s0owog0kssw84
+2025-Jul-17 12:03:05.558171
+lww048gsk44s0owog0kssw84
+2025-Jul-17 12:03:05.793119
+[CMD]: docker rm -f lww048gsk44s0owog0kssw84
+2025-Jul-17 12:03:05.793119
+Error response from daemon: No such container: lww048gsk44s0owog0kssw84
