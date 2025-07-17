@@ -17,12 +17,21 @@ RUN npm prune --production
 # Criar diretórios necessários
 RUN mkdir -p uploads/pdfs uploads/thumbnails uploads/avatars uploads/temp
 
+# Configurar permissões para usuário node
+RUN chown -R node:node /app
+USER node
+
 # Expor porta
 EXPOSE 5000
 
-# ⚠️  HEALTHCHECK QUE SEMPRE PASSA ⚠️
-# Se o Coolify força healthcheck, que seja um que sempre funciona
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 CMD echo "healthy"
+# Instalar curl para healthcheck funcional
+USER root
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+USER node
+
+# Healthcheck que testa se a aplicação está realmente funcionando
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
+  CMD curl -f http://localhost:5000/health || exit 1
 
 # Comando simples de inicialização
 CMD ["npm", "start"]
