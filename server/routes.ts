@@ -147,10 +147,7 @@ export function registerRoutes(app: Express) {
     next();
   }
 
-  // Health check
-  app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', timestamp: new Date().toISOString() });
-  });
+  // Health check route REMOVIDO para evitar detecção automática do Coolify
 
   // User API - get current user info
   app.get('/api/user', (req, res) => {
